@@ -1,4 +1,5 @@
 require 'antech/resources/lab_result'
+require 'antech/resources/test'
 require 'rest-client'
 require 'json'
 
@@ -18,6 +19,10 @@ module Antech
 
     def lab_results
       Antech::Resources::LabResult.new(auth_token)
+    end
+
+    def tests
+      Antech::Resources::Test.new(auth_token)
     end
 
     private
