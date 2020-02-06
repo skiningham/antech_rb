@@ -1,6 +1,6 @@
-require "rest-client"
-require "json"
-require "uri"
+require 'antech/resources/lab_result'
+require 'rest-client'
+require 'json'
 
 module Antech
   class Client
@@ -14,6 +14,10 @@ module Antech
       end
 
       @auth_token = login(credentials)
+    end
+
+    def lab_results
+      Antech::Resources::LabResult.new(auth_token)
     end
 
     private
