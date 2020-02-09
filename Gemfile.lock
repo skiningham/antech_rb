@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    antech_rb (0.0.1)
+    antech_rb (0.0.2)
       rest-client (< 3.0)
 
 GEM
