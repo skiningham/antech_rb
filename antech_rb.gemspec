@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Ruby wrapper for ANTECH Diagnostics web service.}
   spec.homepage      = "https://github.com/skiningham/antech_rb"
   spec.license       = "MIT"
+  spec.required_ruby_version = '>= 2.7.3'
 
   if spec.respond_to?(:metadata)
     spec.metadata["homepage_uri"] = spec.homepage
